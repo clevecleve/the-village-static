@@ -1,0 +1,11 @@
+{
+  "name": "the-village-static",
+  "version": "1.0.0",
+  "description": "Static snapshot of https://thevillageuppermountgravatt.qicre.com for Netlify deployment",
+  "private": true,
+  "scripts": {
+    "crawl": "CRAWL_ORIGIN=https://thevillageuppermountgravatt.qicre.com CRAWL_OUT_DIR=$(pwd)/dist node /Users/jase/Downloads/web/qicre-static/crawl-generic.js",
+    "postprocess": "CRAWL_ORIGIN=https://thevillageuppermountgravatt.qicre.com CRAWL_OUT_DIR=$(pwd)/dist node /Users/jase/Downloads/web/qicre-static/postprocess-generic.js",
+    "fix": "CRAWL_ORIGIN=https://thevillageuppermountgravatt.qicre.com CRAWL_OUT_DIR=$(pwd)/dist node /Users/jase/Downloads/web/qicre-static/fix2-generic.js"
+  }
+}
